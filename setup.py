@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Setup script for Layer.ai MCP Server."""
 
-from setuptools import setup, find_packages
 from pathlib import Path
+
+from setuptools import find_packages, setup
 
 # Read the README file
 this_directory = Path(__file__).parent
@@ -11,7 +12,9 @@ long_description = (this_directory / "README.md").read_text()
 # Read requirements
 requirements = []
 with open("requirements.txt") as f:
-    requirements = [line.strip() for line in f if line.strip() and not line.startswith("#")]
+    requirements = [
+        line.strip() for line in f if line.strip() and not line.startswith("#")
+    ]
 
 setup(
     name="layer-ai-mcp-server",
@@ -31,7 +34,6 @@ setup(
         "Topic :: Multimedia :: Graphics",
         "License :: OSI Approved :: MIT License",
         "Programming Language :: Python :: 3",
-
         "Programming Language :: Python :: 3.10",
         "Programming Language :: Python :: 3.11",
         "Operating System :: OS Independent",
