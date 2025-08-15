@@ -2,7 +2,7 @@
   "mcpServers": {
     "layer-ai-comprehensive": {
       "command": "python",
-      "args": ["layer-mcp-server/fully_working_layer_ai_server.py"],
+      "args": ["layer-mcp-server/production_ready_layer_ai_server.py"],
       "env": {
         "LAYER_API_TOKEN": "pat_d0IrUtTcJ6SKgorrBZd2R32Qa8aFRZcHRjhk9NkjrkUKMHup4HOvniCxiUM9aLgEZZH5NMTAg4esYnYS6NOgfg",
         "LAYER_WORKSPACE_ID": "64395f47-25fc-42b2-bcf6-c195e3e944f4"
